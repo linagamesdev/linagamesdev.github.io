@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinaGames - Mobile Game Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 40px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 25px;
+            margin: 0 auto 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .game-card {
+            background: rgba(255, 255, 255, 0.18);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-title {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .game-desc {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 215, 0, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .rating {
+            font-size: 1.3em;
+            margin: 15px 0;
+        }
+
+        .play-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #333;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .play-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-size: 0.95em;
+        }
+
+        .info a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .game-title {
+                font-size: 1.5em;
+            }
+
+            .container {
+                padding: 30px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://play-lh.googleusercontent.com/1TFey12AT02dDbmESm2hR0kwG6AlfnF0MeyyyJoo6PRp6ywdDzE-ixCOHP-RjAT52-4h=w240-h480"
+            alt="Numberle Logo" class="logo">
+
+        <h1>LinaGames</h1>
+        <p class="subtitle">Mobile Game Developer</p>
+
+        <div class="game-card">
+            <div class="game-title">🔢 Numberle</div>
+            <div class="rating">⭐ 4.4 • 1K+ Downloads</div>
+            <p class="game-desc">
+                Daily Number Puzzle - Crack the hidden code!
+                Guess the 5-digit secret number with logic and strategy.
+            </p>
+
+            <div class="badges">
+                <span class="badge">📅 Daily Challenge</span>
+                <span class="badge">♾️ Endless Mode</span>
+                <span class="badge">🌙 Dark Mode</span>
+                <span class="badge">🌍 Multi-Language</span>
+            </div>
+
+            <a href="https://play.google.com/store/apps/details?id=com.LinaGames.Numberle" class="play-button"
+                target="_blank">
+                ▶ Play on Google Play
+            </a>
+        </div>
+
+        <div class="info">
+            <p>Developer Resources</p>
+            <p style="margin-top: 10px;">
+                <a href="/app-ads.txt">app-ads.txt</a>
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 LinaGames. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
